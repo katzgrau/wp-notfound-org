@@ -15,6 +15,12 @@ nearly 17% of the internet's top one million most-trafficked sites.
 If everyone installed this plugin, that would be a lot of eyeballs helping
 find missing kids.
 
+## Installing
+
+Hopefully this plugin will be approved by Wordpress.org soon., so it'll go into
+their repository.  Until then, you can always [grab the zip file](https://github.com/katzgrau/wp-notfound-org/zipball/master)
+and upload it to your server.
+
 ## Contributing
 
 Contributions are very welcome! I'll review and merge any pull requests as soon as I can.
