@@ -37,10 +37,7 @@
 
 		<div id="header">
 			<div class="w720">
-				<p>Whoops! This page either doesn't exist, or has gone missing. 
-				   You can <a href="#" onclick="history.go(-1);">click here to go back</a>, 
-				   or <a href="<?php echo site_url() ?>">click here</a> to go to the front page. 
-				   But before you do, take a look to see if you recognize the missing child below.</p>
+				<p><?php echo $message; ?></p>
 			</div>
 		</div>
 		<iframe src="http://notfound-static.fwebservices.be/404/index.html?&amp;key=7c1767b30512b6003fd3c2e618a86522" width="100%" height="600" frameborder="0"></iframe>

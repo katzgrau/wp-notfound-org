@@ -26,7 +26,16 @@ class NotFound_Core
     {
         if(is_404()) {
             header("HTTP/1.1 404 Not Found");
-            NotFound_View::load('notfound');
+
+            $message = self::getNFTemplate();
+            $message = str_replace('{{SITE_URL}}', get_site_url(), $message);
+            $message = str_replace('{{SITE_NAME}}', get_bloginfo('name'), $message);
+
+            $data = array (
+                'message' => $message
+            );
+
+            NotFound_View::load('notfound', $data);
             exit;
         }
     }
@@ -44,19 +53,36 @@ class NotFound_Core
      */
     static function adminMenuCallback()
     {
-        $submit  = NotFound_Utility::arrayGet($_POST, 'wpgh_submit');
+        $submit  = NotFound_Utility::arrayGet($_POST, 'nf_submit');
         $updated = FALSE;
 
         if($submit)
         {
-            //WPGH_Utility::setOption('wpgh_opener',   WPGH_Utility::arrayGet($_POST, 'wpgh_opener'));
+            WPGH_Utility::setOption('nf_template', WPGH_Utility::arrayGet($_POST, 'nf_template'));
             $updated = TRUE;
         }
 
         $data = array (
-            // 'wpgh_opener'   => self::getOpeningListTemplate(),
+            'nf_template' => self::getNFTemplate(),
         );
 
         NotFound_View::load('admin', $data);
     }
+
+
+    /**
+     * Get any text we need to output before the list (perhaps, ul)
+     * @return string
+     */
+    static function getNFTemplate()
+    {
+        $default = <<<T
+Whoops! This page either doesn't exist, or has gone missing. 
+You can <a href="#" onclick="history.go(-1);">click here to go back</a>, 
+or <a href="{{SITE_URL}}">click here</a> to go to the front page of {{SITE_NAME}}. 
+But before you do, take a look to see if you recognize the missing child below.
+T;
+        return WPGH_Utility::getOption('nf_template', $default);
+    }
+
 }

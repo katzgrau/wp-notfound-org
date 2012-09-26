@@ -12,7 +12,7 @@ into a page devoted to helping find missing children.
 == Description ==
 
 The goal of this plugin is to make is *really* easy for someone on
-Wordpress to implement the notfound.org missing child page in
+Wordpress to implement the NotFound.org missing child page in
 place of their standard 404 page.
 
 The HTTP 404 is the error that you see when a link is broken,
@@ -23,6 +23,12 @@ Why not turn that into something that benefits the world? The more
 eyes that see a missing child, the more likely someone could be
 found.
 
+**Note**: Activating this plugin will automatically replace your
+default Wordpress 404 page. To stop it, simply deactivate.
+
+All of the missing child notices are served within an iframe
+pointing to [NotFound.org](http://notfound.org).
+
 [@\_kennyk\_](http://twitter.com/_kennyk_) for updates, or visit
 [codefury.net](http://codefury.net)
 
@@ -30,8 +36,8 @@ found.
 
 Because of the current width of the NotFound.org page (720px), it only
 made sense to put it in a separate layout from your site, rather
-then embed it in the current theme. If notfound.org eventually
-provides a more portable version, I'll accomodate that too.
+then embed it in the current theme. If NotFound.org eventually
+provides a more portable version, I'll accommodate that too.
 
 == Installation ==
 
