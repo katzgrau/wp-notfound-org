@@ -58,7 +58,7 @@ class NotFound_Core
 
         if($submit)
         {
-            WPGH_Utility::setOption('nf_template', WPGH_Utility::arrayGet($_POST, 'nf_template'));
+            NotFound_Utility::setOption('nf_template', NotFound_Utility::arrayGet($_POST, 'nf_template'));
             $updated = TRUE;
         }
 
@@ -82,7 +82,7 @@ You can <a href="#" onclick="history.go(-1);">click here to go back</a>,
 or <a href="{{SITE_URL}}">click here</a> to go to the front page of {{SITE_NAME}}. 
 But before you do, take a look to see if you recognize the missing child below.
 T;
-        return WPGH_Utility::getOption('nf_template', $default);
+        return NotFound_Utility::getOption('nf_template', $default);
     }
 
 }

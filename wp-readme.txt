@@ -1,13 +1,14 @@
 === Plugin Name ===
-Contributors: Kenny Katzgrau
+Contributors: katzgrau
 Tags: not,found,missing,children,notfound,notfound.org,404,page
 Requires at least: 3.0
-Tested up to: 3.3.2
-Stable tag: 1.1.0
+Tested up to: 3.4.2
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This is a Wordpress plugin that turns your 404 "page not found" error 
 into a page devoted to helping find missing children.
-
 
 == Description ==
 
