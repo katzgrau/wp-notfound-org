@@ -28,7 +28,7 @@
     }
 
     #preview {
-        bordeR: 1px solid #ccc;
+        border: 1px solid #ccc;
     }
 </style>
 <h1>NotFound.org 404 Page Settings</h1>

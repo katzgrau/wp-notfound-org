@@ -43,7 +43,7 @@
 		<iframe src="http://notfound-static.fwebservices.be/404/index.html?&amp;key=7c1767b30512b6003fd3c2e618a86522" width="100%" height="600" frameborder="0"></iframe>
 		<div id="footer">
 			<div class="w720">
-				<p>If you also use Wordpress, you can help find missing children too.</p>
+				<p>If you also use Wordpress, you can <a target="_blank" href="http://wordpress.org/extend/plugins/notfoundorg-404-page/">help find missing children too.</a></p>
 			</div>
 		</div>
 	</body>

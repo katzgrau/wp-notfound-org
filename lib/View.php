@@ -11,7 +11,7 @@
 class NotFound_View
 {
     /**
-     * Load a view file. The file should be located in WPSearch/Views.
+     * Load a view file. The file should be located in ../views.
      * @param string $file The filename of the view without the extension (assumed
      *  to be PHP)
      * @param array $data An associative array of data that be be extracted and
@@ -23,7 +23,6 @@ class NotFound_View
 
         if(!file_exists($file))
         {
-            WPSearch_Log::add('fatal', "View '$file' was not found");
             throw new Exception("View '$file' was not found");
         }
 
