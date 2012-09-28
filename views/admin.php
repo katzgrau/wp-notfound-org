@@ -41,7 +41,7 @@
 
 <p> 
     If you're seeing this page, the plugin is active. You can make sure it's working by
-    visiting a page that probably doesn't exist. List this one:
+    visiting a page that probably doesn't exist. Like this one:
 </p>
 
 <p>
