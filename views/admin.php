@@ -82,5 +82,3 @@
         </tr>
     </table>
 </form>
-
-<?php
