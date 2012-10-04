@@ -72,6 +72,19 @@
         </tr>
         <tr>
             <th scope="row">
+                Omit 404 Status
+            </th>
+            <td>
+                <input type="checkbox" name="nf_omit_error" value="1" <?php if($nf_omit_error): ?>checked="yes"<?php endif; ?> />
+            </td>
+            <td>
+                Enable this if you've activated this plugin, but the missing child page doesn't
+                seem to be appearing. It may be that your webhost catches 404s and provides its own
+                error page.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
                 Save
             </th>
             <td>
