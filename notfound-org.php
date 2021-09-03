@@ -4,7 +4,7 @@ Plugin Name: NotFound.org 404 Page
 Plugin URI: https://github.com/katzgrau/wp-notfound-org
 Description: A Wordpress plugin that turns your 404 "not found" error into a page devoted to helping find missing children.
 Version: 1.2.0
-Author: Kenny Katzgrau & Arno Van Biesen
+Author: Kenny Katzgrau
 Author URI: http://codefury.net
 */
 
