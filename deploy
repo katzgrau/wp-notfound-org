@@ -4,7 +4,7 @@
 #  copies the contents out of this git directory and places them in
 #  turnk. Additionally, it'll create a new svn tag.
 #
-# It's assumed you have wp-notfound-svn alongside the git repo
+# It's assumed you have notfoundorg-404-page alongside the git repo
 
 
 if [ -z "$1" ]
@@ -18,7 +18,7 @@ fi
 GIT=`pwd`
 
 # Go to svn
-cd ../wp-notfound-svn/trunk
+cd ../notfoundorg-404-page/trunk
 SVN=`pwd`
 
 # Update the code
