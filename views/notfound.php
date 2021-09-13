@@ -29,10 +29,16 @@
 			}
 
 			.w720 {
-				width: 720px;
+				width: 90%;
+				max-width: 720px;
 				margin: 0px auto;
 			}
 
+			@media (max-width: 480px) {
+				iframe {
+					height: 1300px !important;
+				}
+			}
 		</style>
 
 		<div id="header">
@@ -40,7 +46,7 @@
 				<p><?php echo $message; ?></p>
 			</div>
 		</div>
-		<iframe src="http://notfound-static.fwebservices.be/404/index.html?&amp;key=7c1767b30512b6003fd3c2e618a86522" width="100%" height="600" frameborder="0"></iframe>
+		<iframe src="https://notfound-static.fwebservices.be/404/index.html?&amp;key=7c1767b30512b6003fd3c2e618a86522" width="100%" height="755" frameborder="0"></iframe>
 		<div id="footer">
 			<div class="w720">
 				<p>If you also use Wordpress, you can <a target="_blank" href="http://wordpress.org/extend/plugins/notfoundorg-404-page/">help find missing children too.</a></p>

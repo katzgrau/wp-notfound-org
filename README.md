@@ -21,6 +21,7 @@ Hopefully this plugin will be approved by Wordpress.org soon., so it'll go into
 their repository.  Until then, you can always [grab the zip file](https://github.com/katzgrau/wp-notfound-org/zipball/master)
 and upload it to your server.
 
-## Contributing
+## Contributors
+* [Arno Van Biesen](https://famousgreyx.com/)
 
 Contributions are very welcome! I'll review and merge any pull requests as soon as I can.
